@@ -354,7 +354,7 @@
   if (isset($_REQUEST['email']))  {
   
   //Email information
-  $admin_email = "postmaster@localhost";
+  $admin_email = "raphealenike@gmail.com";
   $email = $_REQUEST['email'];
   $subject = $_REQUEST['subject'];
   $comment = htmlspecialchars(trim($_REQUEST['comment']));
