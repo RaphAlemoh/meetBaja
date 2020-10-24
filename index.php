@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Alemoh Rapheal Baja's Portfolio</title>
+    <title>Alemoh Rapheal Baja's Portfolio V1</title>
 		<style>
 .collapsible {
     background-color: #777;
