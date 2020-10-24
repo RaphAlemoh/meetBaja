@@ -359,6 +359,11 @@
   $subject = $_REQUEST['subject'];
   $comment = htmlspecialchars(trim($_REQUEST['comment']));
   $headers = 'From: raphealenike@gmail.com';
+  $admin_email = "postmaster@localhost";
+  $email = $_REQUEST['email'];
+  $subject = $_REQUEST['subject'];
+  $comment = htmlspecialchars(trim($_REQUEST['comment']));
+  $headers = 'From: noreply @ company. com';
 		  function sanitize_my_email($field){
 			$field = filter_var($field, FILTER_SANITIZE_EMAIL);
 			if (filter_var($field, FILTER_VALIDATE_EMAIL)) {
@@ -372,6 +377,14 @@
 				echo "Invalid input";
 			}else{ 
 			  mail($admin_email, $subject, $comment, "From:" . $email, $headers);
+			//check if the email address is invalid $secure_check
+			$secure_check = sanitize_my_email($email);
+			if ($secure_check == false) {
+				echo "Invalid input";
+			}else{ //send email
+			  //send email
+			  mail($admin_email, $subject, $comment, "From:" . $email, $headers);
+			  //Email response
 			  echo "Thank you for contacting us!";
 
 			}
