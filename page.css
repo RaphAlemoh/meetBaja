@@ -1,7 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  background:;
-  margin: 0;
+  background-color:rgb(251, 251, 251);
 }
 
 .anchor {
@@ -11,13 +9,8 @@ body {
   visibility: hidden;
 }
 
-/*JUMBOTRON*/
-.jumbotron {
-	margin-top:0.5em;
-}
 
 .jumbotron-text {
-  /*TAGLINE UNDER NAME*/
   font-weight:400;
   font-size: 2em;
   color: green;
@@ -26,7 +19,6 @@ body {
 }
 
 .jumbotron-text h1 {
-  /*YOUR NAME*/
   text-transform: uppercase;
   font-weight: 800;
   font-size: 3em;
@@ -56,8 +48,6 @@ body {
 
 /*ARROW LINK*/
 #down-arrow {
-  /*position: absolute;
-  width: 100%;*/
   margin-top: auto;
   text-align: center;
   margin-bottom: 50px;
@@ -66,85 +56,11 @@ body {
 #down-arrow a {
   color: green;
 }
+
 h2 {
   font-weight: 200;
   font-size: 2rem;
-  color: #31b0d5;
-  text-transform: uppercase;
-  text-align: center;
-}
-body {
-  font-family: 'Raleway', sans-serif;
-  background:;
-  margin: 0;
-}
-
-.anchor {
-  display: block;
-  position: relative;
-  top: -70px;
-  visibility: hidden;
-}
-
-/*JUMBOTRON*/
-.jumbotron {
-	margin-top:0.5em;
-}
-
-.jumbotron-text {
-  /*TAGLINE UNDER NAME*/
-  font-weight:400;
-  font-size: 2em;
   color: green;
-  text-align:center;
-  padding-top:1em;
-}
-
-.jumbotron-text h1 {
-  /*YOUR NAME*/
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 3em;
-  margin-bottom: 0;
-}
-
-.jumbotron-text p {
-  margin: 0;
-}
-
-/*SOCIAL LINKS*/
-.ul-social {
-  text-align: center;
-  padding-left: 0;
-}
-
-.li-social-links {
-  display: inline-block;
-  list-style: none;
-}
-
-.social {
-  font-size: 2em;
-  color: green;
-  padding: 20px;
-}
-
-/*ARROW LINK*/
-#down-arrow {
-  /*position: absolute;
-  width: 100%;*/
-  margin-top: auto;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-#down-arrow a {
-  color: green;
-}
-h2 {
-  font-weight: 200;
-  font-size: 2rem;
-  color: #31b0d5;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
 }
