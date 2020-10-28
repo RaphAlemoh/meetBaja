@@ -14,9 +14,9 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
         <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-        <link rel="stylesheet" type="text/css" href="page.css"> 
+        <link rel="stylesheet" type="text/css" href="css/page.css"> 
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Nunito|Poppins|Alegreya+Sans">
+    <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Poppins|Alegreya+Sans"> -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
@@ -27,12 +27,15 @@
     <![endif]-->
   </head>
   <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow-sm mb-0">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow-sm mb-0" role="navigation">
     <div class="container-fluid">
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-          aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler d-lg-none" type="button"  data-trigger="#main_nav" 
+    data-toggle="collapse"  aria-controls="main_nav"
+     aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+    </button>
+
       <a class="navbar-brand mb-0 d-none d-lg-block" href="/">
         <img src="image/logo.png" alt="alemsbaja Logo" width="30" height="30" 
         title="alemsbaja Logo" class="img-fluid mt-0 mb-0 d-inline-block align-top">
@@ -45,32 +48,38 @@
         </a>
     </ul>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
+    <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="main_nav">
+    <div class="offcanvas-header mt-3">  
+      <button class="btn btn-outline-danger btn-close pull-right btn-style"> &times </button>
+      <h5 class="py-2 text-white">
+         <a class="nav-link m-0 p-0" href="/">
+          <img src="image/logo.png" alt="Logo" width="30" height="30" title="Logo" 
+          class="img-fluid mt-0 mb-0 d-inline-block align-top">
+          Alemsbaja</a>
+        </h5>
+      </div>
+      
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 menu-nav">
+          <li class="nav-item menu-nav-item active">
+            <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item menu-nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
-
-          <li class="nav-item">
+          <li class="nav-item menu-nav-item">
             <a class="nav-link" href="#experience">Experience</a>
           </li>
-
-          <li class="nav-item">
+          <li class="nav-item menu-nav-item">
             <a class="nav-link" href="#education">Education</a>
           </li>
-
-          <li class="nav-item">
+          <li class="nav-item menu-nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-
-          <li class="nav-item">
+          <li class="nav-item menu-nav-item">
             <a class="nav-link" href="#skills">Skills</a>
           </li>
-
-          <li class="nav-item">
+          <li class="nav-item menu-nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
 
@@ -78,6 +87,8 @@
       </div>
       </div>
     </nav>
+    </header>
+
 
 <div class="jumbotron">
      <div class="jumbotron-text">
@@ -86,23 +97,23 @@
         <div class="jumbotron-social">
           <ul class="ul-social">
             <li class="li-social-links">
-              <a class="social" href="https://www.github.com/RaphAlemoh" target="_blank"><i class="fa fa-github fa-md" aria-hidden="true"></i></a>
+              <a class="social" href="https://www.github.com/RaphAlemoh" target="_blank"><i class="fa fa-github fa-sm" aria-hidden="true"></i></a>
             </li>
             <li class="li-social-links">
-              <a class="social" href="https://www.linkedin.com/mwlite/in/alemoh-rapheal-baja" target="_blank"><i class="fa fa-linkedin fa-md" aria-hidden="true"></i></a>
+              <a class="social" href="https://www.linkedin.com/mwlite/in/alemoh-rapheal-baja" target="_blank"><i class="fa fa-linkedin fa-sm" aria-hidden="true"></i></a>
             </li>
             <li class="li-social-links">
-              <a class="social" href="https://www.facebook.com/rapheal.alemoh" target="_blank"><i class="fa fa-facebook fa-md" aria-hidden="true"></i></a>
+              <a class="social" href="https://www.facebook.com/rapheal.alemoh" target="_blank"><i class="fa fa-facebook fa-sm" aria-hidden="true"></i></a>
             </li>
             <li class="li-social-links">
-              <a class="social" href="https://twitter.com/alemsbaja" target="_blank"><i class="fa fa-twitter fa-md" aria-hidden="true"></i></a>
+              <a class="social" href="https://twitter.com/alemsbaja" target="_blank"><i class="fa fa-twitter fa-sm" aria-hidden="true"></i></a>
             </li>
             <li class="li-social-links">
-              <a class="social" href="https://www.instagram.com/rapheal_alems/" target="_blank"><i class="fa fa-instagram fa-md" aria-hidden="true"></i></a>
+              <a class="social" href="https://www.instagram.com/rapheal_alems/" target="_blank"><i class="fa fa-instagram fa-sm" aria-hidden="true"></i></a>
             </li>
 
             <li class="li-social-links"> 
-              <a class="social" href="https://medium.com/@raphealenike" target="_blank"><i class="fa fa-medium fa-md" aria-hidden="true"></i></a>
+              <a class="social" href="https://medium.com/@raphealenike" target="_blank"><i class="fa fa-medium fa-sm" aria-hidden="true"></i></a>
             </li>
           </ul>
         </div>
@@ -113,14 +124,24 @@
       <!-- END HEADER -->
 	  
 
+
 <div class="container">
-    <div class="content-header">
-      <a class="anchor" name="about"></a>
-      <h2>About</h2>
+<a class="anchor" name="about"></a>
+  <div class="row justify-content-around bg-gray text-center mb-4">  
+    <div class="col-sm-12 col-lg-6">
+      <img src="image/profile.jpg" class="img-fluid img-thumbnail bio-image" width="250" height="250" alt="">
     </div>
-    <div class="content-body">
-      <p class="text-justify"> I'm a skilled, solution-focused Web Developer with experience designing, developing and managing web applications. Consistent and reliable with technical knowledge and a passion for learning and adapting to new technology, i possess a good working knowledge in using Version Control System like GitHub, Gitlab and PaaS service like Herokuapp. I love exploring new innovations in ICT and readily available to work with a team of developers to learn and share experiences.</p>
+    <div class="col-sm-12 col-lg-6 mt-4">
+    <h2 class="text-left">Bio</h2>
+    <div class="text-justify l-4"> 
+      I'm a skilled, solution-focused Web Developer with experience designing, developing and managing web applications. 
+      Consistent and reliable with technical knowledge and a passion for learning and adapting to new technology, 
+      i possess a good working knowledge in using Version Control System like GitHub, Gitlab and PaaS service like Herokuapp.
+      I love exploring new innovations in ICT and readily available to work with a team of developers to learn and share 
+      experiences.
+      </div>
     </div>
+  </div>
 </div>
 <!-- END ABOUT -->
 
@@ -128,7 +149,7 @@
 <!-- BEGIN EXPERIENCE -->
 <div class="container">
  <a class="anchor" name="experience"></a>
-    <h2>Experience</h2>
+  <h2 >Experience</h2>
  <div class="row">
  <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
 <div class="card">
@@ -139,7 +160,7 @@
           <div class="huge"><i>2014</i></div>
        </div>
      </div>
-     <div class="card-footer bg-success text-white text-center">
+     <div class="card-footer bg-gray text-white text-center">
      <a class="nav-link p-0" href="https://www.kems.com">
         <span class="pull-left">View Details</span>
         <span class="pull-right"><i class="fa fa-arrow-circle-right fa-md"></i></span>
@@ -158,7 +179,7 @@
           <div class="huge"><i> 2014 - till date</i></div>
        </div>
      </div>
-     <div class="card-footer bg-success text-white text-center">
+     <div class="card-footer bg-gray text-white text-center">
      <a class="nav-link p-0" href="https://www.raphnike-ict-service.netlify.com">
         <span class="pull-left">View Details</span>
         <span class="pull-right"><i class="fa fa-arrow-circle-right fa-md"></i></span>
@@ -179,7 +200,7 @@
           <div class="huge"><i>2019</i></div>
        </div>
      </div>
-     <div class="card-footer bg-success text-white text-center">
+     <div class="card-footer bg-gray text-white text-center">
      <a class="nav-link p-0" href="https://www.paritie.com">
         <span class="pull-left">View Details</span>
         <span class="pull-right"><i class="fa fa-arrow-circle-right fa-md"></i></span>
@@ -198,9 +219,9 @@
 <!-- BEGIN EDUCATION -->
 <div class="container mt-4">
 <a class="anchor" name="education"></a>
-<h2>Education</h2>
+<h2 class="mb-4">Education</h2>
 <div class="row">
-<div class="col-lg-6 col-md-6">
+<div class="col-lg-6 col-md-6 mt-2">
   <div class="card">
     <div class="card-body">
       <h4 class="card-title">Udacity</h4>
@@ -222,7 +243,7 @@
 </div>
 
 
-<div class="col-lg-6 col-md-6">
+<div class="col-lg-6 col-md-6 mt-2">
 <div class="card">
     <div class="card-body">
       <h4 class="card-title">Federal University of Technology</h4>
@@ -251,10 +272,10 @@
 
 
 <!-- BEGIN PROJECTS -->
-<div class="container">
+<div class="container mt-4">
  <div class="content-header">
       <a class="anchor" name="projects"></a>
-          <h2>Projects</h2>
+          <h2 class="mb-4">Projects</h2>
   </div>
 <!-- <button class="collapsible">Library Managemnt System</button>
 <div class="content">
@@ -296,7 +317,7 @@ Uploading.....
 <!-- BEGIN SKILLS -->
 <div class="container mt-2">
   <a class="anchor" name="skills"></a>
-  <h2>Skills</h2>
+  <h2 class="mb-2">Skills</h2>
     <div class="row justify-content-center">
             <ul class="nav nav-pills">
               <li class="nav-item"><a class="nav-link p-0 pr-2 text-success">HTML</a></li> |
@@ -379,16 +400,14 @@ Uploading.....
       <!-- END CONTACT -->
 
 
-<br />'
-<div class="container">
-  <div class="row justify-content-center">
-<div class="text-center text-success">
-        <p>Copyright <a href="http://twitter.com/alemsbaja" class="nav-link p-0">@alemsbaja</a> 2018</p>
-      </div>
-</div>    
-  </div>
-  <br />
-<!-- END FOOTER -->
+
+<footer class="dev-footer mt-4">
+<div class="text-center">
+<div><i class="fa fa-copyright" aria-hidden="true"></i> 2018 
+<a href="http://twitter.com/alemsbaja">@alemsbaja</a></div>
+</div>  
+</div>
+</footer>
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -415,10 +434,5 @@ for (i = 0; i < coll.length; i++) {
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" async></script>
-		<script type="text/javascript">
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
-        });
-    </script>
   </body>
 </html>
